@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+    font-family:'Josefin Sans', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#e4f0ee;}
+/* Mobile design */
+/* ------------------ */
+main{
+    background-image:linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    width:100%;
+    max-width:23rem;
+    height:fit-content;
+}
+.image{
+    background-image:url("images/hero-mobile.jpg");
+    height:15rem;
+    width:100%;
+    background-repeat:no-repeat;
+}
+.logo{
+    padding:2rem;
+}
+.logo img{
+    height:1.5rem;
+}
+h1{
+    text-transform:uppercase;
+    font-size:5.5vh;
+    letter-spacing:0.6rem;
+    margin-bottom:1.5rem;
+    font-weight:600;
+    opacity:0.7;
+}
+h1 span, p{
+    color:hsl(0, 36%, 70%);
+}
+h1 span{
+    font-weight:300;
+}
+p{
+    line-height:1.5;
+    font-size:1.8vh;
+    margin-bottom:2rem;
+    font-weight:400;
+    opacity:0.8;
+}
+.text{
+    padding:4rem 1.75rem;
+    text-align:center;
+}
+     form{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+        border:none;
+    }
+    .error-icon{
+        display:none;
+        position:absolute;
+        height:20px;
+        right:6rem;
+    }
+   .error-message{
+       display:none;
+       margin-top:0.3rem;
+       margin-right:6rem;
+       height:10px;
+       color:hsl(0, 74%, 60%, 0.8);
+
+   }
+.mail{
+    border-radius:50px;
+    height:3rem;
+    width:100%;
+    border-color:hsla(0, 36%, 70%,0.2);
+    background-color:inherit;
+    padding:0 1.7rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.mail:hover{
+    border-color:hsl(0, 93%, 68%,0.5);
+
+}
+.mail::placeholder{
+    color:hsl(0, 36%, 70%, 0.6);
+    font-weight:400;
+}
+
+.button{
+    background-image:linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    width:5rem;
+    height:3rem;
+    border-radius:30px;
+    position:absolute;
+    right:0;
+    border:none;
+    box-shadow: 0px 15px 20px hsla(0, 36%, 70%,0.4);
+    font-family:inherit;
+    cursor:pointer;
+  
+}
+.button:hover{
+    background-image:linear-gradient(135deg,hsl(0, 80%, 90%),hsl(0, 74%, 80%));
+    box-shadow: 0px 15px 20px hsla(0, 36%, 70%,0.6);
+    height:3.1rem;
+
+}
+
+
+@media (min-width:800px){
+    body{
+        height:100vh;
+    }
+    main{
+        background-image:linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+        width:45em;
+        max-width:120rem;
+        height:fit-content;
+        display:flex;
+    }
+    .image{
+        background-image:url("images/hero-desktop.jpg");
+        height:60vh;
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size:cover;
+        margin-left:auto;
+        order:2;
+    }
+   
+    .text{
+        background-image:url("images/bg-pattern-desktop.svg");
+        background-repeat:no-repeat;
+        background-size:cover;
+        order:1;
+        position:relative;
+        padding:2rem;
+        text-align:left;
+    }
+    .logo{
+        position:absolute;
+        padding:0;
+        margin-top:2rem;
+        margin-left:5rem;
+        z-index:1000;
+    }
+    .logo img{
+        height:15px;
+    }
+    h1{
+        text-transform:uppercase;
+        font-size:5vh;
+        margin-top:4rem;
+        margin-left:3rem;
+        margin-bottom:1rem;
+        font-weight:600;
+        opacity:0.7;
+    }
+    p{
+        font-size:1.5vh;
+        margin-left:3rem;
+        margin-right:3rem;
+        margin-bottom:1.2rem;
+     
+    }
+    .mail{
+        height:1.8rem;
+        padding-left:1rem;
+        padding-right:0;
+    }
+    .mail::placeholder{
+        font-size:1.4vh;
+        color:hsl(0, 36%, 70%, 0.5);
+   
+    }
+
+    .button{
+        height:1.8rem;
+        width:3.2rem;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        }
+    .button:hover{
+        height:1.9rem;
+    }
+    form{
+        width:16rem;
+        margin-left:3rem;
+        margin-right:auto;
+    }
+    .error-icon{
+        height:15px;
+        right:4rem;
+    }
+   .error-message{
+       margin-left:4rem;
+   }
+    .button svg{
+        height:12px;
+    }
+  
+}
